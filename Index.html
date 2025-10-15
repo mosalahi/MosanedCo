@@ -1,630 +1,0 @@
-@{
-    Layout = null;
-}
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مساند للخدمات الإلكترونية - شريكك الموثوق في النجاح</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link href="stylesheet3.css" rel="stylesheet" />
-    <link href="~/css/chatbot.css" rel="stylesheet" />
-</head>
-<body>
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scrollProgress"></div>
-
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container">
-            <nav class="nav-container">
-                <div class="logo-container">
-                    <div class="logo"><img src="~/images/logo.png" /> </div>
-                    <button class="mobile-menu-btn" aria-controls="mobileMenu" aria-expanded="false" aria-label="فتح القائمة">
-                        <i class="fas fa-bars"></i>
-                    </button>
-
-                    <div>
-                        <div class="logo-text">مساند</div>
-                        <div class="logo-subtitle">للخدمات الإلكترونية</div>
-                    </div>
-                 
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#home">الرئيسية</a></li>
-                    <li><a href="#about">من نحن</a></li>
-                    <li><a href="#services">خدماتنا</a></li>
-                    <li><a href="#testimonials">آراء العملاء</a></li>
-                    <li><a href="#intro-video">فيديو تعريفي</a></li>
-                    <li><a href="#contact">تواصل معنا</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- طبقة تعتيم -->
-<div id="mobileOverlay" class="mobile-overlay" hidden></div>
-
-<!-- القائمة الجانبية للجوال -->
-<nav id="mobileMenu" class="mobile-drawer" aria-hidden="true">
-  <div class="drawer-head">
-    <span class="brand">مساند</span>
-    <button class="drawer-close" aria-label="إغلاق">
-      <i class="fas fa-times"></i>
-    </button>
-  </div>
-
-       
-
-  <ul class="drawer-list">
-    <li><a href="#hero">الصفحة الرئيسية</a></li>
-    <li><a href="#about">من نحن</a></li>       
-    <li><a href="#services">كل الخدمات</a></li>
-    <li><a href="#testimonials">آراء العملاء</a></li>
-    <li><a href="#intro-video">فيديو تعريفي</a></li>
-    <li><a href="#contact">تواصل معنا</a></li>
-  </ul>
-</nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero page-section active">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="slide-in-left">من الاستشارة إلى التنفيذ <span class="highlight">نحن نساندك</span></h1>
-                    <p class="fade-in-delayed">شريكك الموثوق ومساندك الذكي في إنجاز الخدمات العامة والتجارة الإلكترونية والتسويق الرقمي والتصوير الاحترافي. نُسهل عليك الإجراءات ونفتح لك آفاق النجاح.</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="trust-indicators">
-                <div class="trust-item fade-in zoom-in" style="animation-delay: 0.1s;">
-                    <i class="fas fa-certificate"></i>
-                    <h3>مرخص رسمياً</h3>
-                    <p>سجل تجاري: 1010XXXXXX</p>
-                </div>
-                <div class="trust-item fade-in zoom-in" style="animation-delay: 0.3s;">
-                    <i class="fas fa-users"></i>
-                    <h3>+500 عميل راضي</h3>
-                    <p>ثقة العملاء هي أولويتنا</p>
-                </div>
-                <div class="trust-item fade-in zoom-in" style="animation-delay: 0.5s;">
-                    <i class="fas fa-clock"></i>
-                    <h3>دعم 24/7</h3>
-                    <p>نحن هنا لخدمتك في أي وقت</p>
-                </div>
-                <div class="trust-item fade-in zoom-in" style="animation-delay: 0.7s;">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>ضمان الجودة</h3>
-                    <p>نضمن لك أعلى معايير الخدمة</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Intro Video Section -->
-    <section id="intro-video" class="intro-video page-section">
-        <div class="container">
-            <div class="intro-head">
-                <h2>فيديو تعريفي عن مساند</h2>
-                <p>دقيقة واحدة تشرح كيف نساندك من الاستشارة إلى التنفيذ.</p>
-            </div>
-
-            <div class="video-frame">
-                <video controls
-                       preload="metadata"
-                       poster="/images/video-poster.png"
-                       playsinline
-                       muted
-                       webkit-playsinline
-                       x5-playsinline
-                       style="width:100%;border-radius:20px;">
-                    <source src="/videos/Ads.mp4" type="video/mp4">
-                    متصفحك لا يدعم تشغيل الفيديو.
-                </video>
-            </div>
-
-
-            <!-- CTA اختياري تحت الفيديو -->
-            <div class="video-cta">
-                <a href="#services" class="btn-primary">
-                    اكتشف خدماتنا
-                    <i class="fas fa-arrow-left"></i>
-                </a>
-                <a href="#contact" class="btn-secondary">
-                    تواصل معنا
-                    <i class="fas fa-phone"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section page-section">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>من نحن</h2>
-                <p>في مكتب مساند نؤمن أن الوقت والسهولة هما أساس النجاح</p>
-            </div>
-            <div class="about-text slide-in-right" style="text-align: center; font-size: 1.2rem; color: var(--gray-medium); line-height: 2; max-width: 800px; margin: 0 auto;">
-                نحن فريق متخصص يجمع بين الخبرة في الخدمات العامة والدقة في المعاملات الحكومية، مع خبرة متقدمة في إدارة التجارة الإلكترونية والتسويق الرقمي والتصوير الاحترافي. هدفنا هو أن نكون حلقة الوصل التي تزيل عنك التعقيدات، ونفتح لك الطريق نحو النمو والتميز.
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services page-section">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>خدماتنا المتميزة</h2>
-                <p>نقدم مجموعة شاملة من الخدمات المتخصصة لتلبية احتياجاتك المختلفة</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-file-contract"></i>
-                    </div>
-                    <h3>الخدمات العامة والمعاملات الحكومية</h3>
-                    <ul class="service-features">
-                        <li>تخليص المعاملات الحكومية بسرعة واحترافية</li>
-                        <li>استخراج وتجديد التراخيص التجارية</li>
-                        <li>خدمات الإقامات والهوية الوطنية</li>
-                        <li>التقديم في برامج الدعم الحكومية</li>
-                        <li>خدمات المؤسسات الفردية والشركات</li>
-                        <li>استشارات قانونية وإدارية</li>
-                    </ul>
-                </div>
-
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-store"></i>
-                    </div>
-                    <h3>التجارة الإلكترونية</h3>
-                    <ul class="service-features">
-                        <li>تصميم وتطوير المتاجر الإلكترونية</li>
-                        <li>إدارة المتاجر والمخزون</li>
-                        <li>حلول الدفع الإلكتروني الآمنة</li>
-                        <li>خدمات الشحن والتوصيل</li>
-                        <li>تدريب شامل على إدارة المتجر</li>
-                        <li>دعم فني مستمر ومتابعة</li>
-                    </ul>
-                </div>
-
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>التسويق الرقمي</h3>
-                    <ul class="service-features">
-                        <li>إدارة حملات إعلانية على جميع المنصات</li>
-                        <li>تحليل السوق ودراسة المنافسين</li>
-                        <li>إنتاج محتوى إعلاني احترافي</li>
-                        <li>استراتيجيات تسويقية مبتكرة</li>
-                        <li>تقارير أداء مفصلة ودورية</li>
-                        <li>تحسين معدلات التحويل</li>
-                    </ul>
-                </div>
-
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-camera-retro"></i>
-                    </div>
-                    <h3>التصوير الاحترافي</h3>
-                    <ul class="service-features">
-                        <li>تصوير منتجات عالي الجودة</li>
-                        <li>تصوير دعائي وتسويقي للعلامات التجارية</li>
-                        <li>جلسات تصوير مؤسسية واحترافية</li>
-                        <li>معالجة وتحرير الصور بأحدث البرامج</li>
-                        <li>إخراج بصري يرفع قيمة منتجاتك</li>
-                        <li>تصوير الفعاليات والمؤتمرات</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials page-section">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>آراء عملائنا</h2>
-                <p>ما يقوله عملاؤنا عن تجربتهم معنا</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-text">
-                        "تجربة رائعة مع فريق مساند. أنجزوا معاملاتي الحكومية في وقت قياسي وبمهنية عالية. أنصح الجميع بالتعامل معهم."
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">أ.م</div>
-                        <div class="author-info">
-                            <h4>أحمد محمد</h4>
-                            <p>صاحب مؤسسة تجارية</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-text">
-                        "فريق محترف جداً في التسويق الرقمي. زادوا مبيعاتي بنسبة 300% خلال 3 أشهر فقط. شكراً لكم على الجهد الرائع."
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">س.أ</div>
-                        <div class="author-info">
-                            <h4>سارة أحمد</h4>
-                            <p>صاحبة متجر إلكتروني</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-text">
-                        "خدمة التصوير الاحترافي للمنتجات فاقت توقعاتي. الصور كانت بجودة عالية جداً وساعدت في زيادة مبيعاتي بشكل ملحوظ."
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">ع.س</div>
-                        <div class="author-info">
-                            <h4>عبدالله سعد</h4>
-                            <p>تاجر منتجات رياضية</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact page-section">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>تواصل معنا</h2>
-                <p>نحن هنا لمساعدتك في تحقيق أهدافك</p>
-            </div>
-
-            <!-- جميعها أزرار سريعة -->
-            <div class="contact-quick-actions fade-in">
-
-                <a class="cta whatsapp" href="https://api.whatsapp.com/send?phone=966555244672" target="_blank" rel="noopener">
-                    <i class="fab fa-whatsapp"></i><span>واتساب</span>
-                </a>
-
-                <a class="cta phone" href="tel:+966555244672">
-                    <i class="fas fa-phone"></i><span>اتصال</span>
-                </a>
-
-                <a class="cta snapchat" href="https://snapchat.com/t/3lTzVYD1" target="_blank" rel="noopener">
-                    <i class="fab fa-snapchat"></i><span>سناب</span>
-                </a>
-
-                <a class="cta instagram" href="https://instagram.com/mktbmasand90" target="_blank" rel="noopener">
-                    <i class="fab fa-instagram"></i><span>إنستجرام</span>
-                </a>
-
-                <a class="cta tiktok" href="https://www.tiktok.com/@@mosanedservice" target="_blank" rel="noopener">
-                    <i class="fab fa-tiktok"></i><span>تيك توك</span>
-                </a>
-
-                <a class="cta facebook" href="https://www.facebook.com/share/173TobbmS9/?mibextid=wwXIfr" target="_blank" rel="noopener">
-                    <i class="fab fa-facebook"></i><span>فيسبوك</span>
-                </a>
-
-                <a class="cta email" href="mailto:mktbsand90@gmail.com">
-                    <i class="fas fa-envelope"></i><span>بريد</span>
-                </a>
-
-                <a class="cta location" href="@("https://www.google.com/maps/place/21%C2%B015'37.5%22N+40%C2%B025'54.1%22E/@21.2604027,40.4291191,17z/data=!3m1!4b1!4m4!3m3!8m2!3d21.2604027!4d40.431694?entry=ttu")" target="_blank" rel="noopener">
-                    <i class="fas fa-map-marker-alt"></i><span>الموقع</span>
-                </a>
-
-
-            </div>
-        </div>
-    </section>
-
-
-
-  
-
-    <!-- Footer -->
-    <footer class="footer" id="footer">
-        <div class="container">
-            <nav class="nav-container footer-nav">
-                <!-- الشعار -->
-                <div class="logo-container">
-                    <div class="logo"></div>
-                    <div>
-                        <div class="logo-text">مساند</div>
-                       
-                    </div>
-                </div>
-
-                <!-- نفس الروابط الموجودة في الهيدر -->
-                <ul class="nav-menu">
-                    <li><a href="#home">الرئيسية</a></li>
-                    <li><a href="#about">من نحن</a></li>
-                    <li><a href="#services">خدماتنا</a></li>
-                    <li><a href="#testimonials">آراء العملاء</a></li>
-                    <li><a href="#intro-video">فيديو تعريفي</a></li>
-                    <li><a href="#trust">الثقة</a></li> <!-- جديد -->
-                    <li><a href="#contact">تواصل معنا</a></li>
-                </ul>
-            </nav>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 مساند للخدمات الإلكترونية — جميع الحقوق محفوظة.</p>
-            </div>
-        </div>
-    </footer>
-
-
-    <script>
-        // ═══════════════════════════════════════════════════════
-        // 📊 Scroll Progress Bar
-        // ═══════════════════════════════════════════════════════
-        window.addEventListener('scroll', () => {
-            const scrollProgress = document.getElementById('scrollProgress');
-            const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-            scrollProgress.style.width = scrolled + '%';
-        });
-
-        // ═══════════════════════════════════════════════════════
-        // 🎨 Header Scroll Effect
-        // ═══════════════════════════════════════════════════════
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // ═══════════════════════════════════════════════════════
-        // 🔗 Smooth Scrolling للروابط
-        // ═══════════════════════════════════════════════════════
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const headerHeight = document.querySelector('.header').offsetHeight;
-                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // ═══════════════════════════════════════════════════════
-        // ⚡ Intersection Observer للحركات
-        // ═══════════════════════════════════════════════════════
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                } else {
-                    // ⚡ إزالة الكلاس عند الخروج من المنطقة المرئية
-                    entry.target.classList.remove('visible');
-                }
-            });
-        }, observerOptions);
-
-        // مراقبة جميع العناصر المتحركة
-        document.querySelectorAll('.fade-in, .slide-in-right, .zoom-in, .slide-in-left, .fade-in-delayed').forEach(el => {
-            observer.observe(el);
-        });
-
-        // ═══════════════════════════════════════════════════════
-        // 🔢 Counter Animation للإحصائيات
-        // ═══════════════════════════════════════════════════════
-        function animateCounters() {
-            const counters = document.querySelectorAll('.stat-item h3');
-
-            counters.forEach(counter => {
-                const target = parseInt(counter.textContent);
-                let count = 0;
-                const increment = target / 100;
-
-                const updateCounter = () => {
-                    if (count < target) {
-                        count += increment;
-                        counter.textContent = Math.floor(count) + (counter.textContent.includes('+') ? '+' : '');
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.textContent = target + (counter.textContent.includes('+') ? '+' : '');
-                    }
-                };
-
-                updateCounter();
-            });
-        }
-
-        // Trigger counter animation when stats section is visible
-        const statsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    statsObserver.unobserve(entry.target);
-                }
-            });
-        });
-
-        const statsSection = document.querySelector('.stats');
-        if (statsSection) {
-            statsObserver.observe(statsSection);
-        }
-
-        // ═══════════════════════════════════════════════════════
-        // 🎬 Loading Animation
-        // ═══════════════════════════════════════════════════════
-        window.addEventListener('load', () => {
-            document.body.style.opacity = '0';
-            setTimeout(() => {
-                document.body.style.transition = 'opacity 0.5s ease';
-                document.body.style.opacity = '1';
-            }, 100);
-        });
-
-        // ═══════════════════════════════════════════════════════
-        // 🏠 Logo Click للعودة للأعلى
-        // ═══════════════════════════════════════════════════════
-        document.querySelector('.logo-container').addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        // ═══════════════════════════════════════════════════════
-        // 📱 القائمة الجانبية للجوال (Mobile Menu) - محسّن
-        // ═══════════════════════════════════════════════════════
-        document.addEventListener('DOMContentLoaded', function() {
-            const btn = document.querySelector('.mobile-menu-btn');
-            const drawer = document.getElementById('mobileMenu');
-            const overlay = document.getElementById('mobileOverlay');
-            const closeBtn = document.querySelector('.drawer-close');
-            const focusableElements = drawer.querySelectorAll('a, button');
-
-            // فتح القائمة
-            function openMenu() {
-                drawer.classList.add('open');
-                overlay.classList.add('show');
-                document.body.classList.add('menu-open');
-
-                // ✅ إصلاح Accessibility
-                btn.setAttribute('aria-expanded', 'true');
-                drawer.setAttribute('aria-hidden', 'false');
-                drawer.removeAttribute('inert'); // إزالة inert
-                overlay.hidden = false;
-
-                // تمكين التركيز على العناصر
-                focusableElements.forEach(el => el.removeAttribute('tabindex'));
-
-                // نقل التركيز لزر الإغلاق
-                setTimeout(() => closeBtn.focus(), 100);
-            }
-
-            // إغلاق القائمة
-            function closeMenu() {
-                drawer.classList.remove('open');
-                overlay.classList.remove('show');
-                document.body.classList.remove('menu-open');
-
-                // ✅ إصلاح Accessibility
-                btn.setAttribute('aria-expanded', 'false');
-                drawer.setAttribute('aria-hidden', 'true');
-                drawer.setAttribute('inert', ''); // إضافة inert
-                overlay.hidden = true;
-
-                // منع التركيز على العناصر المخفية
-                focusableElements.forEach(el => el.setAttribute('tabindex', '-1'));
-
-                // إعادة التركيز لزر القائمة
-                btn.focus();
-            }
-
-            // Events
-            btn?.addEventListener('click', openMenu);
-            closeBtn?.addEventListener('click', closeMenu);
-            overlay?.addEventListener('click', closeMenu);
-
-            // إغلاق عند الضغط على ESC
-            document.addEventListener('keydown', e => {
-                if (e.key === 'Escape' && drawer.classList.contains('open')) {
-                    closeMenu();
-                }
-            });
-
-            // ✅ منع Tab من الخروج من القائمة عند فتحها
-            drawer.addEventListener('keydown', (e) => {
-                if (e.key === 'Tab' && drawer.classList.contains('open')) {
-                    const focusable = Array.from(focusableElements).filter(el =>
-                        el.offsetParent !== null && !el.hasAttribute('tabindex')
-                    );
-                    const firstFocusable = focusable[0];
-                    const lastFocusable = focusable[focusable.length - 1];
-
-                    if (e.shiftKey && document.activeElement === firstFocusable) {
-                        e.preventDefault();
-                        lastFocusable.focus();
-                    } else if (!e.shiftKey && document.activeElement === lastFocusable) {
-                        e.preventDefault();
-                        firstFocusable.focus();
-                    }
-                }
-            });
-
-            // إغلاق عند اختيار رابط + التمرير السلس
-            drawer?.querySelectorAll('a[href^="#"]').forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-
-                    const targetId = this.getAttribute('href');
-                    const target = document.querySelector(targetId);
-                    if (!target) return;
-
-                    // إغلاق القائمة
-                    closeMenu();
-
-                    // التمرير السلس مع تعويض الهيدر
-                    setTimeout(() => {
-                        const headerOffset = 90;
-                        const elementPosition = target.offsetTop - headerOffset;
-
-                        window.scrollTo({
-                            top: elementPosition,
-                            behavior: 'smooth'
-                        });
-                    }, 300);
-                });
-            });
-
-            // ✅ تهيئة أولية: منع التركيز على العناصر المخفية
-            focusableElements.forEach(el => el.setAttribute('tabindex', '-1'));
-            drawer.setAttribute('inert', '');
-        });
-
-                // ═══════════════════════════════════════════════════════
-        // 📱 تفاعل اللمس للكروت في الجوال
-        // ═══════════════════════════════════════════════════════
-        if ('ontouchstart' in window) {
-            document.querySelectorAll('.trust-item').forEach(item => {
-                item.addEventListener('touchstart', function(e) {
-                    // إزالة active من كل الكروت
-                    document.querySelectorAll('.trust-item').forEach(i => {
-                        if (i !== this) i.classList.remove('active-touch');
-                    });
-
-                    // إضافة/إزالة active من الكارت الحالي
-                    this.classList.toggle('active-touch');
-                });
-            });
-
-            // إزالة active عند اللمس خارج الكروت
-            document.addEventListener('touchstart', function(e) {
-                if (!e.target.closest('.trust-item')) {
-                    document.querySelectorAll('.trust-item').forEach(item => {
-                        item.classList.remove('active-touch');
-                    });
-                }
-            });
-        }
-    </script>
-   
-
-    
-</body>
-
-</html>
